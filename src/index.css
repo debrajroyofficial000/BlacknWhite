@@ -1,0 +1,89 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+  display: block;
+}
+#root {
+  font-family: sans-serif;
+}
+
+/* *********************** CONTAINER STYLING *********************** */
+
+.container {
+  width: 1024px;
+  max-width: 100%;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card_container {
+  border-radius: 5px;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* *********************** TOGGLER STYLING ******************* */
+.theme_toggler {
+  text-align: end;
+  padding: 1rem 0;
+}
+
+.theme_toggler button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+
+/* ******************* PROFILE STYLING ************************/
+.profile {
+  line-height: 1.7;
+  text-align: center;
+}
+.profile_picture {
+  width: 150px;
+  border-radius: 5px;
+}
+
+.profile_name {
+  font-size: 2rem;
+}
+.profile_location {
+  font-size: 1.4rem;
+}
+.profile_bio {
+  color: #d79921;
+}
+
+/* *********************************** LINK STYLING ***********************  */
+.link {
+  padding: 1rem 0;
+  border: 2px solid black;
+  margin: 1rem;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  transition: all 0.3s linear;
+}
+.link:hover {
+  box-shadow: 10px 7px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+/* *********************** THEME STYLE ************************** */
+
+.dark {
+  background: #282828;
+  color: #766a64;
+}
+
+.light {
+  background: #766a64;
+  color: #282828;
+}
