@@ -1,16 +1,11 @@
 import { FaSun } from "react-icons/fa";
 import { FaMoon } from "react-icons/fa";
 
-function Toggler({ themeMode, darkMode, lightMode }) {
-  const handleTheme = () => {
-    if (themeMode === "light") darkMode();
-    else lightMode();
-  };
-
+function Toggler({ themeMode, toggleTheme }) {
   return (
     <div className="theme_toggler">
       <button
-        onClick={handleTheme}
+        onClick={toggleTheme}
         className={themeMode === "light" ? "light" : "dark"}
       >
         {themeMode === "light" ? <FaSun /> : <FaMoon />}
